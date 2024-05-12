@@ -4,6 +4,9 @@ Typecho Blogging Platform
 Typecho is a PHP-based blog software and is designed to be the most powerful blog engine in the world.
 Typecho is released under the GNU General Public License 2.0.
 
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftqx5201%2Ftypecho&env=ADAPTER_NAME&env=PREFIX&env=HOST&env=USERNAME&env=PASSWORD&env=CHARSET&env=PORT&env=DATABASE&env=ENGINE&project-name=vercel-typecho&repository-name=vercel-typecho)
+
 ## Main Features
 
 * Multiple databases support (MySQL, SQLite, PostgreSQL)
