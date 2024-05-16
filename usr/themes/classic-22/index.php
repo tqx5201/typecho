@@ -30,7 +30,13 @@ $this->need('header.php');
                 <?php postMeta($this); ?>
                 
                 <div class="entry-content fmt" itemprop="articleBody">
-                    <?php $this->excerpt(100,_t(' ...')); ?>
+                    <?php 
+                        echo '<a href="';
+                        $this->permalink();
+                        echo '">';
+                        $this->excerpt(100,_t(' ...'));
+                        echo '</a>';
+                    ?>
                 </div>
             </article>
             <hr class="post-separator">
