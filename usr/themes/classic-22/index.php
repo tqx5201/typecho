@@ -31,7 +31,7 @@ $this->need('header.php');
                 
                 <div class="entry-content fmt" itemprop="articleBody">
                     <?php 
-                        echo '<a href="';
+                        echo '<a style="text-decoration:none;color:#333;" href="';
                         $this->permalink();
                         echo '">';
                         $this->excerpt(100,_t(' ...'));
