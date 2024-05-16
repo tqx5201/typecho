@@ -30,7 +30,7 @@ $this->need('header.php');
                 <?php postMeta($this); ?>
                 
                 <div class="entry-content fmt" itemprop="articleBody">
-                    <?php $this->excerpt(100,_t('阅读全文')); ?>
+                    <?php $this->excerpt(100,_t(' ...')); ?>
                 </div>
             </article>
             <hr class="post-separator">
