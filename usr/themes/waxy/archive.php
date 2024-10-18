@@ -22,7 +22,7 @@
 
             <?php while($this->next()): ?>
 			<!----全文模式开始----->
-			<?php if ($this->options->articles_list==1):?>
+			<?php if ($this->options->articles_list==0):?>
 			<article id="<?php $this->cid() ?>" class="post">
 
 				<?php if (array_key_exists('star',unserialize($this->___fields()))): ?><div class="featured" title="推荐文章">
@@ -66,7 +66,7 @@
 			</article>
 			<?php endif; ?>
 			<!----摘要模式开始----->
-			<?php if ($this->options->articles_list==0):?>
+			<?php if ($this->options->articles_list==1):?>
 
 			<article id="<?php $this->cid() ?>" class="post" style="padding:25px 10px;">
 				
