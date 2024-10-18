@@ -23,13 +23,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 <?php while($this->next()): ?>
 <!----全文模式开始----->
-<?php if ($this->options->articles_list==1):?>
+<?php if ($this->options->articles_list==0):?>
 <article id="<?php $this->cid() ?>" class="post">
 
     <?php 
-     var_dump($this->___fields());
-     var_dump(unserialize($this->___fields()));
-     if (array_key_exists('star',unserialize($this->___fields()))): ?><div class="featured" title="推荐文章">
+     //var_dump($this->___fields());
+     //var_dump(unserialize($this->___fields()));
+     if (array_key_exists('star',unserialize($this->___fields()))): ?>
+    <div class="featured" title="推荐文章">
         <i class="glyphicon glyphicon-star"></i>
     </div><?php endif; ?>
 
@@ -74,7 +75,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 </article>
 <?php endif; ?>
 <!----摘要模式开始----->
-<?php if ($this->options->articles_list==0):?>
+<?php if ($this->options->articles_list==1):?>
 
 <article id="<?php $this->cid() ?>" class="post" style="padding:25px 10px;">
     
