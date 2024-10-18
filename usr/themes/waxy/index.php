@@ -27,6 +27,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <article id="<?php $this->cid() ?>" class="post">
 
     <?php 
+     var_dump($this->___fields());
      var_dump(unserialize($this->___fields()));
      if (array_key_exists('star',unserialize($this->___fields()))): ?><div class="featured" title="推荐文章">
         <i class="glyphicon glyphicon-star"></i>
