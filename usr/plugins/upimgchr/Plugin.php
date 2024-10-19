@@ -62,6 +62,8 @@ class upimgchr_Plugin implements Typecho_Plugin_Interface
      */
     public static function render()
     {
-        echo '<script async id="chevereto-pup-src" src="https://imgchr.com/sdk/pup.js" data-url="https://imgchr.com/upload" data-auto-insert="markdown-embed"></script>';
+        echo '图片上传插件实现方法';
+        //echo '<script async id="chevereto-pup-src" src="https://imgchr.com/sdk/pup.js" data-url="https://imgchr.com/upload" data-auto-insert="markdown-embed"></script>';
+		echo '<script type="text/javascript" src="//mod.postimage.org/phpbb3-german-family.js" charset="utf-8"></script>';
     }
 }
