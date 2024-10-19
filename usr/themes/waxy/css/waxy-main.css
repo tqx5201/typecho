@@ -710,7 +710,7 @@ text-align:right;
 .post-content h4:before,
 .post-content h5:before,
 .post-content h6:before {
- content:"#";
+ #content:"#";
  margin-right:.275rem;
  font-weight:900;
  color:#F4645F;
